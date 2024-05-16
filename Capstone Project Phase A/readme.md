@@ -5,5 +5,5 @@ The study introduces a novel approach to identify potential citation manipulatio
 
 ## Acknowledgements
 This project is based on the GitHub repository of Graph Masked Autoencoders with Transformers (GMAE): 
-[[Link to the original GMAE repository](https://github.com/RinneSz/GMAE)]
-[[Link to the original GMAE paper](https://arxiv.org/abs/2202.08391)]
+- [Link to the original GMAE repository](https://github.com/RinneSz/GMAE)
+- [Link to the original GMAE paper](https://arxiv.org/abs/2202.08391)
