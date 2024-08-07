@@ -7,3 +7,4 @@ pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -
 pip install torch_geometric
 pip install cython
 pip install matplotlib
+pip install numpy==1.26.4

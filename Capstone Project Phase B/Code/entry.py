@@ -171,7 +171,6 @@ def cli_main():
 
             trainer.fit(model, datamodule=dm)
             model.eval()
-            #trainer.test(model, datamodule=dm)
             
             #create game latent space vectors
             gameVectors=createGmaeVectors(model,dm)

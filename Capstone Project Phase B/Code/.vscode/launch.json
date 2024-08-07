@@ -1,0 +1,99 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "name": "Python: Debug Entry",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/entry.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--num_workers", "2",
+                "--seed", "1",
+                "--mask_ratio", "0.8",
+                "--dataset_name", "Cora",
+                "--gpus", "1",
+                "--accelerator", "ddp",
+                "--precision", "16",
+                "--peak_lr", "1e-4", 
+                "--end_lr","1e-9",
+                "--l1","0",
+                "--l2","5",  
+                "--batch_size","32", 
+                "--ffn_dim","64",
+                "--hidden_dim","64",
+                "--num_heads","8",
+                "--dropout_rate","0.5",
+                "--n_encoder_layers", "4",
+                "--n_decoder_layers", "2",
+                "--warmup_updates", "40000",
+                "--tot_updates", "400000",
+                "--default_root_dir", "exps/cora-4-2-0.8/1",
+                "--reload_dataloaders_every_epoch", "1",
+                // "--validate",
+                // "--test"
+            ]
+        }
+    ]
+}
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [        
+//         {
+//             "name": "Python: Debug Entry",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "${workspaceFolder}/entry.py",
+//             "console": "integratedTerminal",
+//             "justMyCode": true,
+//             "args": [
+//                 "--num_workers", "2",
+//                 "--seed", "1",
+//                 "--mask_ratio", "0.7",
+//                 "--dataset_name", "CiteSeer",
+//                 "--gpus", "1",
+//                 "--accelerator", "ddp",
+//                 "--precision", "16",
+//                 "--peak_lr", "1e-4", 
+//                 "--end_lr","1e-9",
+//                 "--l1","0",
+//                 "--l2","100",  
+//                 "--batch_size","64", 
+//                 "--ffn_dim","64",
+//                 "--hidden_dim","64",
+//                 "--num_heads","8",
+//                 "--dropout_rate","0.5",
+//                 "--n_encoder_layers", "8",
+//                 "--n_decoder_layers", "2",
+//                 "--warmup_updates", "40000",
+//                 "--tot_updates", "400000",
+//                 "--default_root_dir", "exps/citeseer-8-2-0.7/1",
+//                 "--reload_dataloaders_every_epoch", "1"
+//             ]
+//         }
+//     ]
+// }
+
+// debug test
+// {
+//     "version": "0.2.0",
+//     "configurations": [        
+//         {
+//             "name": "Python: Unit Test",
+//             "type": "python",
+//             "request": "launch",
+//             "module": "unittest",
+//             "args": [
+//                 "tests.test_cosineSim.TestCreateGmaeVectors"
+//             ],
+//             "justMyCode": false,
+//             "console": "integratedTerminal"
+//         }
+//     ]
+// }

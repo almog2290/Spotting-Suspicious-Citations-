@@ -124,9 +124,11 @@ def calc_edges_restore (edge_dict , gmaeVectors ,threshold , dm):
     print('######### edges accuracy -T={} ###################'.format(threshold))    
     print('size of correct edges ->',count_correct)
     print('size of manipulation edges ->',count_manipulation)
-    acc=count_correct/(count_correct+count_manipulation)
+    if(count_correct+count_manipulation==0):
+        acc=0
+    else:
+        acc=count_correct/(count_correct+count_manipulation)
     print('accuracy ->',acc)
-
     return acc
 
 

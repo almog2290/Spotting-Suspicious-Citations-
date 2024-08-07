@@ -124,7 +124,6 @@ class GraphDataModule(LightningDataModule):
             for s in samples:
                 items.append(self.process_samples(s[0], s[1], s[2]))
        
-        # self.dataset_val = MyDataset(items)
        
         loader = DataLoader(self.dataset_val, batch_size=self.batch_size*self.n_val_sampler,
                             shuffle=False,
@@ -133,20 +132,6 @@ class GraphDataModule(LightningDataModule):
                             )
         return loader
     
-    # def test_dataloader(self):
-    #     """predict evaluation"""
-    #     sampler = NeighborSampler(self.dataset.data.edge_index[:,self.test_mask_edges], sizes=[self.l1, self.l2], batch_size=1,
-    #                        shuffle=False, node_idx=self.test_node_indices)
-    #     items = []
-    #     for s in sampler:
-    #         items.append(self.process_samples(s[0], s[1], s[2]))
-    #     self.dataset_test = MyDataset(items)
-    #     loader = DataLoader(self.dataset_test, batch_size=1,
-    #                         shuffle=False,
-    #                         num_workers=self.num_workers,
-    #                         collate_fn=partial(collator),
-    #                         )
-    #     return loader
     
     def predict_dataloader(self):
         """predict evaluation"""
