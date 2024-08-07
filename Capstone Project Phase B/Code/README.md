@@ -14,12 +14,12 @@ Follow the instructions below to run the project locally:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/almog2290/Spotting-Suspicious-Citations-.git
+    git clone https://github.com/almog2290/Spotting-Suspicious-Citations-.git suspicious-citations
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd /content/Spotting-Suspicious-Citations-/Capstone Project Phase B/Code
+    cd suspicious-citations/Capstone Project Phase B/Code
     ```
 
 3. Make the shell scripts executable:
