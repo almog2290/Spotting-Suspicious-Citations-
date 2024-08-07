@@ -1,6 +1,7 @@
-# Spotting Suspicious Citations (Code Implementation)
+# Running instructions
 
-This project aims to identify suspicious citations in academic papers using machine learning models.
+This project aims to identify suspicious citations in academic papers using machine learning models. The code implementation needs to be set up and run as follows:
+
 
 ## Running the Project on Colab Notebook
 
