@@ -8,12 +8,10 @@ This project is based on the GitHub repository of Graph Masked Autoencoders with
 - [Link to the original GMAE repository](https://github.com/RinneSz/GMAE)
 - [Link to the original GMAE paper](https://arxiv.org/abs/2202.08391)
 
-## Project book
+## Project Implementation
 - [Book](https://github.com/almog2290/Spotting-Suspicious-Citations-/tree/main/Capstone%20Project%20Phase%20B/Book)
-- [Code Implementation](https://github.com/almog2290/Spotting-Suspicious-Citations-/tree/main/Capstone%20Project%20Phase%20B/Code)
-
-## Paper (Study)
-- [MDPI](https://www.mdpi.com/2227-7390/12/6/814)
+- [Code](https://github.com/almog2290/Spotting-Suspicious-Citations-/tree/main/Capstone%20Project%20Phase%20B/Code)
+- [MDPI - Paper](https://www.mdpi.com/2227-7390/12/6/814)
 
 
 
