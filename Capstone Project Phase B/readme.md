@@ -12,6 +12,8 @@ This project is based on the GitHub repository of Graph Masked Autoencoders with
 - [Book](https://github.com/almog2290/Spotting-Suspicious-Citations-/tree/main/Capstone%20Project%20Phase%20B/Book)
 - [Code Implementation](https://github.com/almog2290/Spotting-Suspicious-Citations-/tree/main/Capstone%20Project%20Phase%20B/Code)
 
+## Paper (Study)
+- [MDPI](https://www.mdpi.com/2227-7390/12/6/814)
 
 
 
