@@ -119,7 +119,7 @@ def cli_main():
         accelerator='auto',
         precision=str(args.precision)+'-mixed',
         #max_steps = args.max_steps,
-        max_epochs=1000,
+        max_epochs=10,
         default_root_dir=args.default_root_dir,
         reload_dataloaders_every_n_epochs=args.reload_dataloaders_every_epoch,
         enable_progress_bar=True,
@@ -139,7 +139,7 @@ def cli_main():
     
     
     if not args.test and not args.validate:
-        rounds = 50
+        rounds = 2
         for i in range(rounds):
             print('round ->',i+1)            
             print('Evaluating.....')
@@ -149,7 +149,7 @@ def cli_main():
                     accelerator='auto',
                     precision=str(args.precision)+'-mixed',
                     #max_steps = args.max_steps,
-                    max_epochs=1000,
+                    max_epochs=10,
                     default_root_dir=args.default_root_dir,
                     reload_dataloaders_every_n_epochs=args.reload_dataloaders_every_epoch,
                     enable_progress_bar=True,
