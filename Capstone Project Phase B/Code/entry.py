@@ -128,7 +128,7 @@ def cli_main():
     trainer.callbacks.append(checkpoint_callback)
     trainer.callbacks.append(LearningRateMonitor(logging_interval='step'))
     prepare_data(dm)
-    patience = 5
+    patience = 50
     earlystop_callback = EarlyStopping(
         monitor=metric,
         patience=patience,
@@ -160,7 +160,7 @@ def cli_main():
 
                 # prepare data in each start of the round
                 prepare_data(dm)
-                patience = 5
+                patience = 50
                 earlystop_callback = EarlyStopping(
                     monitor=metric,
                     patience=patience,   
